@@ -1,0 +1,139 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+}
+
+/* Desktop 
+!!!!!! INCOMPLETE!!!!!!
+*/
+
+
+/*@media screen and (min-width: 1201px){
+    .grid1{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        
+    }
+    
+                 
+    
+    }
+    .class1{
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        max-width: 100%;
+    }
+    .class2{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        max-width: 100%;
+    }
+    .class3{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        max-width: 100%;
+    }
+    .class4{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        max-width: 100%;
+           
+    }
+    .class5{
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        max-width: 100%;
+           
+    }
+    .class6{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        max-width: 100%;
+           
+    }
+    .class7{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        max-width: 100%;
+           
+    }
+    .class8{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 6;
+        grid-column-end: 4;
+        max-width: 100%;
+           
+    }
+    .class9{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        max-width: 100%;
+           
+    }
+
+    
+}
+
+*/
+
+
+
+
+/* Tablette version*/
+
+@media screen and (max-width: 1200px){
+.grid1{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px;
+    
+    gap: 20px 20px;
+}
+img{
+    max-width: 100%;
+
+}
+}
+
+
+
+/*Mobile version */
+
+@media screen and (max-width: 900px){
+    .grid1{
+        display: grid;
+        grid-template-columns: 33%;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    img{
+        max-width: 100%;
+    
+    }
+}

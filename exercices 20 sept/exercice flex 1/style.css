@@ -1,0 +1,228 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------ EXO 1 - Créer 8 div */
+
+#exo1{
+   
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;  
+}
+
+
+.class1{
+flex-grow: 1;
+background-color: lightblue;
+}
+.class2{
+    flex-grow: 1;
+background-color: lightgreen;
+}
+.class3{
+    flex-grow: 1;
+background-color: orangered;
+}
+.class4{
+    flex-grow: 1;
+background-color: pink;
+}
+.class5{
+    flex-grow: 1;
+background-color: blue;
+}
+.class6{
+    flex-grow: 1;
+background-color: yellow;
+}
+.class7{
+    flex-grow: 1;
+background-color: rgb(59, 34, 34);
+}
+.class8{
+    flex-grow: 1;
+background-color: rgb(176, 176, 235);
+}
+
+/*tablette version  */
+
+
+
+@media screen and (max-width: 1200px) {
+    .class1, .class2, .class3, .class4, .class5, .class6, .class7, .class8{
+        width: 25%;
+        flex-wrap: wrap;
+    }
+}
+
+/*mobile version */
+
+@media screen and (max-width: 900px) {
+    #exo1{
+        background-color: lightblue;
+    }
+    .class1, .class2, .class3, .class4, .class5, .class6, .class7, .class8{
+        width: 48%;
+        flex-wrap: wrap;
+        margin: 3px;
+    }
+}
+
+/* ------------ EXO 2 - Créer 9 div */
+
+#exo2{
+   
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;  
+}
+
+
+.class9{
+flex-grow: 1;
+background-color: lightblue;
+}
+.class10{
+    flex-grow: 1;
+background-color: lightgreen;
+}
+.class11{
+    flex-grow: 1;
+background-color: orangered;
+}
+.class12{
+    flex-grow: 1;
+background-color: pink;
+}
+.class13{
+    flex-grow: 1;
+background-color: blue;
+}
+.class14{
+    flex-grow: 1;
+background-color: yellow;
+}
+.class15{
+    flex-grow: 1;
+background-color: rgb(59, 34, 34);
+}
+.class16{
+    flex-grow: 1;
+background-color: rgb(176, 176, 235);
+}
+
+.class17{
+    flex-grow: 1;
+background-color: rgb(8, 30, 39);
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 1201px) {
+    .class9, .class10, .class11, .class12,  .class14, .class15, .class16, .class17{
+        width: 25%;
+        flex-wrap: wrap;
+    }
+    .class13{
+        width: 100%;
+    }
+}
+
+
+
+/*tablette version  */
+
+
+
+@media screen and (max-width: 1200px) {
+    .class9, .class10, .class11, .class12,  .class14, .class15, .class16, .class17{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .class13{
+        width: 100%;
+    }
+}
+
+/*mobile version */
+
+@media screen and (max-width: 900px) {
+    #exo2{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .class9, .class10, .class11, .class12, .class13, .class14, .class15, .class16, .class17{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+/* ------------ EXO 3 - Créer header / main / nav / footer */
+
+#exo3{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.header{  
+    background-color: blueviolet;
+    flex-grow: 1;
+}
+.class20{
+    flex-grow: 2;
+}
+.nav{
+    background: greenyellow;
+    
+}
+.main{
+    background-color: rgb(65, 136, 206);
+    
+}
+.footer{
+    background-color: green;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 901px) {
+    .class20{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav{
+        width: 200px;
+    }
+    .main{
+        flex-grow: 1;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #exo3{
+        height: 100vh;
+        display:flex;
+        flex-direction: column;      
+    }
+    
+    .header, .nav, .footer{
+        height: 20vh;
+    }
+    .main{
+        height: 40vh;
+    }
+    .class20{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}

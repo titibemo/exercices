@@ -1,0 +1,127 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: red;
+    color: black;
+   
+}
+nav{
+    background-color: grey;
+   
+}
+li{
+    list-style: none;
+}
+footer{
+    background-color: black;
+    color: white;
+  
+}
+
+/* Version desktop*/
+
+@media screen and (min-width: 1201px){
+    body{   
+        display:grid;
+        grid-template-areas: 
+    "header header header header header" 
+    "nav p p p p" 
+    "footer footer footer footer footer";
+    grid-template-rows: 10vh 80vh 10vh;
+        
+    }
+    header{
+        background-color: green;
+        text-align: center;
+        grid-area: header;
+    }
+    nav{
+        text-align: center;
+        display: block;
+        grid-area: nav;
+        width: 100px;
+    }
+    p{
+        grid-area: p;
+    }
+    li{
+        list-style: none;
+        
+        display: block;
+        
+    }
+    footer{
+        text-align: center;
+        grid-area: footer;
+    }
+
+
+    }
+
+
+
+/* Version tablette*/
+
+@media screen and (max-width: 1200px){
+
+    body{   
+        display:grid;
+        grid-template-columns: 100%; 
+        
+    }
+    header{
+        background-color: green;
+        text-align: center;
+        height: 10vh;
+    }
+    nav{
+        text-align: center;
+        height: 10vh
+        
+    }
+    p{
+        height: 60vh;
+    }
+    li{
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        margin: 0 20px 0 20px;
+    }
+    footer{
+        text-align: center;
+        height: 10vh;
+    }
+
+
+    }
+
+
+/* Version mobile*/
+
+@media screen and (max-width: 900px){
+
+body{   
+    display:grid;
+    grid-template-columns: 100%; 
+    justify-content: center;
+}
+header{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+li{
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+footer{
+    text-align: center;
+}
+
+}
