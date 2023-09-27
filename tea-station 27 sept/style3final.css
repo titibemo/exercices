@@ -1,0 +1,553 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'espace';
+	src: url("./assets/font/Catamaran/Catamaran-VariableFont_wght.ttf")
+}
+@font-face {
+	font-family: 'angle';
+	src: url("./assets/font/Grand_Hotel/GrandHotel-Regular.ttf")
+		
+}
+
+/*Ajour dernière minute : 
+- green border image.
+- icone dans services */
+.miou{
+    align-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+.miou img{
+    align-content: center;
+    align-items: center;
+    display: block;
+}
+.miou span{
+    position: absolute;
+    top: 90%;
+    right: 40%;
+    background-color: lightgreen ;
+    padding: 2px;
+    border-radius: 50%;
+    
+}
+/*FIN AJOUT DERNIERE MINUTE*/
+
+.green-text{
+    color:green;
+    font-size: 1.5em;
+    font-family: "angle";
+}
+.policep{
+    font-family: 'espace';
+    color: black;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.btn-green{
+    background-color: green;
+    color: white;
+    padding: 4px 6px 4px 6px;
+}
+.btn-green:hover{
+    background-color: rgb(21, 206, 21);
+    color: white;
+    padding: 4px 6px 4px 6px;
+}
+
+
+/*----- TEST NAAAAV*/
+
+.nav menu{
+    background-color: grey;
+    width: 10%;
+    display: none;
+}
+#burger
+{
+    display: none;
+    
+}
+#burger:checked + nav menu
+{
+    top: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+label[for="burger"]{
+    background-color: green;
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 3px;
+}
+label[for="burger"]:active
+{
+    top: 3px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*FIN TEXT NAAAAAV*/
+
+/*header*/
+
+
+header{
+    position: relative;
+    background: rgba(0, 0, 0, 0.7) url("./assets/image/main-bcg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    height: 80vh;
+    width: 100%;
+    object-fit: contain;
+    
+}
+header p{
+    font-size: larger;
+    text-align: center;
+    color: green;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-family: 'espace';
+    
+    animation-name: appear; 
+    animation-duration: 3s; 
+    animation-direction: normal; 
+    animation-iteration-count: 1; 
+    animation-timing-function:ease-in;
+    animation-delay: 0.3s;
+}
+header h1{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    height: 20px;
+    font-family: "espace";
+
+    animation-name: appear1; 
+    animation-duration: 3s; 
+    animation-direction:normal; 
+    animation-iteration-count: 1; 
+    animation-timing-function:ease-in;
+    animation-delay: 0.3s;
+}
+header button{
+        position: absolute;
+        width: 6.5em;
+        background-color: green;
+        color: white;
+        padding: 0.7em;
+        border:double 3px green;
+        background-clip: padding-box;
+        top: 60%;
+        left: 50%;
+}
+header button:hover{
+    background-color: rgb(21, 206, 21);   
+}
+
+/*icone*/
+
+.icones{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(173, 216, 230, 0.137);
+}
+.icones div{
+    
+    margin: 10px;
+    
+}
+.icones div:hover{
+    transform: scale(1.1);
+}
+.icones p~p{
+    padding: 6px 0 3px 0;
+    color: rgb(43, 91, 105);
+}
+.btn-green{
+    background-color: green;
+    color: white;
+}
+
+/*about our*/
+
+.about-our{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+   
+    /*margin: 0 50px 0 50px;*/  
+}
+.img-about{
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    border: solid 3px green;
+}
+.img-about img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: solid 1px black;
+    border: solid 3px green;
+}
+
+.img-about:hover{
+    transform: scale(1.2);
+    filter: sepia(200%) hue-rotate(70deg) saturate(250%);
+}
+.about-our div > p{
+   
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+    
+}
+.about-our p + h2{
+   
+    padding: 0 0 4px 0;
+    margin: 5px;
+}
+.about-our h2~p{
+    color: rgb(43, 91, 105);
+}
+
+/*our products*/
+
+.our-product{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.137); 
+}
+.our-product button{
+    margin: 10px;
+}
+.our-product span{
+    color: green;
+}
+
+.img-p{
+    height: 200px;
+    width: 200px;
+}
+
+/* Our services */
+
+.explore{
+    margin-top: 50px;
+}
+
+.explore, .title-services{
+    text-align: center;
+}
+.title-services{
+    padding-bottom: 40px;
+}
+
+
+.our-services{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px;  
+}
+
+
+.services1, .services2, .services3{
+    margin: 0 20px 0 20px;
+    background-color: rgba(173, 216, 230, 0.137);
+        
+}
+.services1:hover, .services2:hover, .services3:hover{
+    transform: scale(1.1);
+}
+
+.our-services button{
+    margin: 10px 0 10px 0;
+}
+
+
+
+/* Contact*/
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    
+}
+.contact p{
+    margin: 5px;
+    font-family: 'espace';
+    
+}
+
+.ico1, .ico2, .ico3{
+font-family: "espace";
+color: green;
+}
+
+.ico1::before{
+    display: inline-block;
+    content: url("./assets/image/location-arrow-solid.svg");
+    width: 15px;
+}
+.ico2::before{
+    display: inline-block;
+    content: url("./assets/image/envelope-solid.svg");
+    width: 15px;
+}
+.ico3::before{
+    display: inline-block;
+    content: url("./assets/image/phone-flip-solid.svg");
+    width: 15px;
+}
+
+
+form{
+    background-color: rgba(128, 128, 128, 0.205);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+input{
+    margin-bottom: 10px;
+}
+.textarea, input{
+    margin: 0 10px 10px 10px;
+}
+.btn-submit{
+    background-color: green;
+    color: white;
+    width: 100%;
+    height: 2.5em;
+}
+.btn-submit:hover{
+    background-color: rgb(21, 206, 21);
+}
+
+footer{
+    background-color: black;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 100%;
+}
+footer img{
+    background-color: white;
+    margin: 10px;
+    width: 20px;
+}
+.copyright{
+    display: none;
+}
+
+@media (min-width:701px) and (max-width:900px){
+    header p{
+        font-size: larger;
+        text-align: center;
+        color: green;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        font-family: 'espace';
+        
+        animation-name: appear; 
+        animation-duration: 3s; 
+        animation-direction: normal; 
+        animation-iteration-count: 1; 
+        animation-timing-function:ease-in;
+        animation-delay: 0.3s;
+    }
+    .icones{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(173, 216, 230, 0.137);
+    }
+
+    .about-our{
+        margin: 30px;
+        padding: 20px;
+        display: grid;
+        justify-content: space-evenly;
+       
+        /*margin: 0 50px 0 50px;*/
+        
+    }
+    .img-about{
+        width: 305px;       
+    }
+
+    
+    .our-product{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);      
+        padding: 20px;
+        
+    }
+
+
+    /* TODO à finir - probéme flexbox/grid*/
+    
+    .contact{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .copyright{
+        text-align: center;
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    header p{
+        font-size: larger;
+        text-align: center;
+        color: green;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        font-family: 'espace';
+        
+        animation-name: appear; 
+        animation-duration: 3s; 
+        animation-direction: normal; 
+        animation-iteration-count: 1; 
+        animation-timing-function:ease-in;
+        animation-delay: 0.3s;
+    }
+    .icones{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(173, 216, 230, 0.137);
+    }
+
+    .about-our{
+        margin: 30px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        
+        /*margin: 0 50px 0 50px;*/
+        
+    }
+    .our-product{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 20px;
+       
+    }
+    .our-services{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 30px;
+        padding-bottom: 10px;  
+    }
+    .services1, .services2, .services3{
+        margin-bottom: 20px;
+        
+        background-color: rgba(173, 216, 230, 0.137);
+            
+    }
+    .contact{
+        display: grid;
+        flex-direction:column;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    .copyright{
+       
+        display: block;
+        color: white;
+        
+        
+    }
+    .copyright span{
+        color: green;
+    }
+
+}
+
+
+@keyframes appear {
+    0%{
+        left: -5%;
+        visibility: hidden;
+    }
+    
+    100%{
+        left: 50%;
+        visibility: 100;
+    }
+}
+@keyframes appear1 {
+    0%{
+        left: 105%;
+        visibility: 0%;
+    }
+    
+    100%{
+        left: 50%;
+        visibility: 100%;
+    }
+}
