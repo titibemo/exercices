@@ -1,0 +1,122 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    background: rgba(0, 0, 0, 0.418) url("./bg-image.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    height: 100vh;
+    width: 100%;
+    
+   
+    
+}
+
+h1{
+    position: relative;
+    color: azure;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 3s; 
+    animation-direction: normal; 
+    animation-iteration-count: 1; 
+    animation-timing-function:ease-in;
+    
+}
+
+.carte{
+    text-align: center;
+    margin: 15px 48% 15px 48%;
+    height: 65px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    
+}
+.carte img{
+    width: 100%;
+    height: 100%;
+    
+}
+.message{
+    color: azure;
+    
+    
+    margin-top: 40px;
+    text-align: center;
+    background-color: black;
+}
+form{
+    text-align: center;
+    margin: 20px;
+    
+}
+.sub{
+   margin: 5px;
+}
+
+form, .sub{
+    position: relative;
+    animation-name: appear2;
+    animation-duration: 3s; 
+    animation-direction: normal; 
+    animation-iteration-count: 1; 
+    animation-timing-function:ease-in;
+}
+
+.again, .again2{
+    position: relative;
+    top: 125px;
+    margin: auto;
+    text-align: center;
+    height: 120px;
+    width: 270px;
+    background-color: chartreuse;
+    display: none;
+    z-index: 2;
+}
+.oui, .oui2{
+    margin: 10px;
+}
+
+
+
+
+@keyframes appear{
+    0%{
+        left: -50%;
+    }
+    
+    100%{
+        left: 0%;
+
+    }
+}
+@keyframes appear2{
+    0%{
+        right: -50%;
+    }
+    
+    100%{
+        right: 0%;
+
+    }
+}
+
+.parties{
+    color: white;
+}
+
+.carteCache1{
+    display: block;
+}
+.carteCache2{
+    display: none;
+}
+
