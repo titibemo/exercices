@@ -118,5 +118,10 @@ form, .sub{
 }
 .carteCache2{
     display: none;
+    animation-name: appear2;
+    animation-duration: 3s; 
+    animation-direction: normal; 
+    animation-iteration-count: 1; 
+    animation-timing-function:ease-in;
 }
 

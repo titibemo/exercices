@@ -26,6 +26,7 @@ let c = 7;
 
 //TODO test carte retourne
 
+let carte0 = document.querySelector('.carte');
 let carte1 = document.querySelector('.carteCache1');
 let carte2 = document.querySelector('.carteCache2');
 
@@ -67,6 +68,18 @@ function jouer (){
 
         carte1.style.display = "none";
         carte2.style.display = "block";
+
+        carte0.style.position = "relative";
+        carte0.style.animationName = ("appear2");
+        carte0.style.animationDuration= ("3s"); 
+        carte0.style.animationDirection= ("normal"); 
+        carte0.style.animationIterationCount = ("1"); 
+        carte0.style.animationTimingFunction = ("ease-in");
+
+
+
+
+
         carte2.textContent = `le chiffre à trouver était  ${guess}`
 
         
