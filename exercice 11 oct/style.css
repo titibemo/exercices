@@ -100,7 +100,7 @@ form, .sub{
 }
 @keyframes appear2{
     0%{
-        right: -50%;
+        transform: -50%;
     }
     
     100%{
@@ -118,10 +118,17 @@ form, .sub{
 }
 .carteCache2{
     display: none;
-    animation-name: appear2;
-    animation-duration: 3s; 
-    animation-direction: normal; 
-    animation-iteration-count: 1; 
-    animation-timing-function:ease-in;
+    
 }
 
+@keyframes appear3{
+    0%{
+        transform: rotateX(0deg);
+        left: -50%;
+    }
+    
+    100%{
+        transform: rotateX(1800deg);
+        left: 0%;
+    }
+}

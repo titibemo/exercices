@@ -70,7 +70,7 @@ function jouer (){
         carte2.style.display = "block";
 
         carte0.style.position = "relative";
-        carte0.style.animationName = ("appear2");
+        carte0.style.animationName = ("appear3");
         carte0.style.animationDuration= ("3s"); 
         carte0.style.animationDirection= ("normal"); 
         carte0.style.animationIterationCount = ("1"); 
