@@ -67,6 +67,7 @@ function jouer (){
 
         carte1.style.display = "none";
         carte2.style.display = "block";
+        carte2.textContent = `le chiffre à trouver était  ${guess}`
 
         
         rejouer.style.display = "block";
