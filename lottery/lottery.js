@@ -222,11 +222,12 @@ divGrille.style.margin = "15px auto"
 
 
 divTirage.style.height = "220px";
-
 divTirage.style.margin = "auto";
 
+divChoix.style.textAlign = "center"
 
 divCtirage.style.display = "inline-block";
+divCtirage.style.textAlign = "center";
 
  
 divBon.style.fontSize = "72pt"
