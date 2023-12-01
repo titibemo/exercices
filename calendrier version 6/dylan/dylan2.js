@@ -1,5 +1,5 @@
 
-export default class Lottery  {
+export default class Dylan2  {
 
    constructor(){
       this.init()
@@ -124,23 +124,15 @@ export default class Lottery  {
    
       bouton.innerHTML=this.i;
       bouton.setAttribute("id",this.i);
-      bouton.addEventListener("click", function() {
+      /*probleme ici :
+      objectif : Lors de l'appui sur la variable "bouton", la méthode "ajouter" (avec comme paramètre la variable)" Ne fonctionne pas.
+      
+      */
+      bouton.addEventListener("click", () => {
          console.log(this);
-         ajouter(bouton);
+         this.ajouter(bouton);
    })
    
-
-
-   bouton.addEventListener("mouseenter", hover)
-   bouton.addEventListener("mouseleave", nohover)
-
-  function hover(){
-  bouton.style.backgroundColor = "lightgreen"
-  }
-  function nohover(){
-     bouton.style.backgroundColor = "#FFF"
-     }
-
    document.getElementById("grille").append(bouton);
    if(this.i%7==0){
       let br=document.createElement("br");
@@ -165,7 +157,7 @@ export default class Lottery  {
        nbouton.style.margin = "3px"
        nbouton.style.color = "red"
        nbouton.className="nbouton";
-       nbouton.setAttribute("id","ch"+nbr);
+       nbouton.setAttribute("id","ch"+this.nbr);
        nbouton.innerHTML=ob.textContent;
        document.getElementById("choix").append(nbouton);
        choix[this.nbr]=ob.firstChild.nodeValue;
@@ -180,8 +172,10 @@ export default class Lottery  {
 
  j = 0
  
+
+
  ztirage(){
-    setTimeout("ztirage()",100);
+    setTimeout(this.ztirage.bind(this),100);
     if(this.j<6){
        let zbouton=document.createElement("div");
        zbouton.style.width = "26px"
@@ -201,7 +195,7 @@ export default class Lottery  {
        if(this.j==6){
          let p2 = document.createElement("p")
          p2.textContent = "Voici le tirage effectué par mon cerf de justice assermenté, Bo-ho-honne chance !"
-         divChoix.append(p2)
+         this.divChoix.append(p2)
           document.getElementById("bon").style.visibility="visible";
           this.tirage();
           this.musicTirage();
@@ -215,7 +209,7 @@ export default class Lottery  {
  itr = 50
 
  tirage(){
-    let tx=setTimeout("tirage()",40);
+    let tx=setTimeout(this.tirage.bind(this),40);
     this.rep+=1;
     if(this.rep<this.itr){
        for(let k=this.index+1;k<6;k++)
@@ -228,7 +222,7 @@ export default class Lottery  {
              this.tab[this.index]=v;
              for(let k=0;k<6;k++){
                 if(document.getElementById("ch"+k).firstChild.data==this.tab[this.index]){
-                  musicBon();
+                  this.musicBon();
                    document.getElementById("ch"+k).style.backgroundColor="green";
                    document.getElementById("res"+this.index).style.backgroundColor="green";
                    document.getElementById("ch"+k).style.color="#FFF";
@@ -247,7 +241,7 @@ export default class Lottery  {
        this.index+=1;
        if(this.index==6){
           clearTimeout(tx);
-          musicEnd();
+          this.musicEnd();
           let p = document.createElement("p")
           let p2 = document.createElement("p")
           p.setAttribute("id", "fin")
@@ -271,10 +265,10 @@ export default class Lottery  {
  }
 ///musique
 
-musiqueChoix = new Audio('./meow.mp3') 
-musiqueTirage = new Audio ('./suspense.mp3') 
-musiqueBon = new Audio ('./wow.mp3') 
-musiqueEnd = new Audio ('./carey.mp3') 
+musiqueChoix = new Audio('./assets-lottery/meow.mp3') 
+musiqueTirage = new Audio ('./assets-lottery/suspense.mp3') 
+musiqueBon = new Audio ('./assets-lottery/wow.mp3') 
+musiqueEnd = new Audio ('./assets-lottery/carey.mp3') 
 
    musicBg (){
       this.musiqueChoix.play()
@@ -289,12 +283,11 @@ musiqueEnd = new Audio ('./carey.mp3')
       this.musiqueEnd.play()
     }
 
- //////// style /////
 
 };
 
 
-
+customElements.define("balise-animation1", Dylan2);
 
 
 
