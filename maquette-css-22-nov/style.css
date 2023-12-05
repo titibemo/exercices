@@ -1,0 +1,232 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'aneliza', 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: "aneliza";
+    src: url(./fonts/Aneliza-Bold/Aneliza-Regular.ttf);
+}
+
+
+header{
+    background: center / 200% url(./images/header/headerbg.jpg);
+    font-weight: bold;
+}
+
+.test{
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    position: absolute;
+    left: 75px;
+    width: 75px;
+}
+
+.connexion{
+    position: absolute;
+    right: 0;
+    font-size: 0.8em;
+    border: 1px solid white;
+}
+.client{
+    color: white;
+    background-color: rgb(50, 1, 99);
+    padding: 3px 10px 3px 10px;
+    font-size: 0.6em;
+    font-weight: 200;
+}
+.social-media{
+    display: flex;
+    justify-content:space-around;
+    height: 40px;
+}
+.google, .facebook, .twitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.google{
+    background-color: rgb(169, 224, 79);
+}
+.facebook{
+    background-color:rgb(152, 211, 57);
+}
+.twitter{
+    background-color: rgb(128, 180, 44);
+}
+
+.whitepara{
+    position: relative;
+    color: white;
+    margin-left: 40px;
+    max-width:fit-content;
+}
+.greenpara{
+    color: rgb(169, 224, 79);
+    font-size: 1em;
+}
+.violetpara{
+    color: rgb(170, 73, 173);
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.grid{
+    color: white;
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+}
+
+.un{
+    font-size: 3em;
+}
+.pourcentage{
+    font-size: 2em;
+}
+.prix{
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-weight:900;
+}
+.prix .seulement{
+    line-height: 1.2;
+    font-size: 1.8em;
+    margin-left: -10px;
+    font-weight:bolder;
+}
+
+.small-para{
+    font-size: 0.3em;
+    color: white;
+    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.div-button{
+    text-align: center;
+    padding: 10px 0 40px 0;
+}
+.button{
+    padding: 10px;
+    border-radius: none;
+    background-color: rgb(150, 206, 19);
+    color: white;
+    font-size: 0.6em;
+}
+
+.nav1, .nav2{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    /*grid-template-columns: repeat (3, max-content);*/
+    font-size: 0.5em;
+    background-color: rgb(78, 22, 78);
+    color: white;
+    padding: 15px 5px 15px 5px;
+}
+
+.qui{
+    background-color: rgb(250, 229, 201);
+}
+
+.titre2{
+    color: rgb(78, 22, 78);
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.texte{
+    color: rgb(78, 22, 78);
+    font-size: 0.8em;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.icones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+}
+
+.para-icone{
+    width: 50%;
+    margin: auto;
+    color: rgb(78, 22, 78);
+    font-size: 0.8em;
+}
+
+.div-savoir{
+    text-align: center;
+}
+.button-savoir{
+    padding: 10px;
+    border-radius: none;
+    background-color: rgb(150, 206, 19);
+    color: white;
+    font-size: 0.6em;
+    margin-bottom: 50px;
+}
+
+.titre3{
+    color: rgb(250, 229, 201);
+    font-size: 0.8em;
+    margin: 10px 0 10px;
+    text-align: center;
+}
+
+.services{
+    background: center / cover url(./images/header/headerbg.jpg);
+}
+
+.service1{
+    text-align: center;
+    background-color: lightblue;
+    background-color: rgb(250, 229, 201);
+    width: 90%;
+    margin: auto;
+
+}
+.diagnostic{
+    padding-top: 20px;
+    color: rgb(78, 22, 78);
+    /*padding: 20px 0 30px 0;*/
+}
+
+.para-diagnostic{
+    padding: 40px 0 20px 0;
+    font-size: 0.8em;
+    width: 90%;
+    margin: auto;
+    color: rgb(78, 22, 78);
+}
+
+.button-services{
+    margin: 20px;
+    padding: 10px;
+    border-radius: none;
+    color: white;
+    font-size: 0.6em;
+    background-color: rgb(78, 22, 78);
+}
+
+
+
+
+
+
+
+
+

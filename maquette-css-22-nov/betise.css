@@ -1,0 +1,75 @@
+.test{
+    width: calc(10%);
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+}
+
+.test2{
+    width: calc(10%);
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+}
+
+.test:nth-child(2){
+    transform: rotate(10deg);
+}
+.test:nth-child(3){
+    transform: rotate(20deg);
+}
+.test:nth-child(4){
+    transform: rotate(30deg);
+}
+.test:nth-child(5){
+    transform: rotate(40deg);
+}
+.test:nth-child(6){
+    transform: rotate(50deg);
+}
+.test:nth-child(7){
+    transform: rotate(60deg);
+}
+.test:nth-child(8){
+    transform: rotate(70deg);
+}
+.test:nth-child(9){
+    transform: rotate(80deg);
+}
+.test:nth-child(10){
+    transform: rotate(90deg);
+}
+
+.test2:nth-child(11){
+    transform: rotate(100deg);
+}
+.test2:nth-child(12){
+    transform: rotate(110deg);
+}
+.test2:nth-child(13){
+    transform: rotate(120deg);
+}
+.test2:nth-child(14){
+    transform: rotate(130deg);
+}
+.test2:nth-child(15){
+    transform: rotate(140deg);
+}
+.test2:nth-child(16){
+    transform: rotate(150deg);
+}
+.test2:nth-child(17){
+    transform: rotate(160deg);
+}
+.test2:nth-child(18){
+    transform: rotate(170deg);
+}
+.test2:nth-child(19){
+    transform: rotate(180deg);
+}
