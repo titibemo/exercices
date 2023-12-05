@@ -152,6 +152,7 @@ header{
     font-size: 0.8em;
     margin: auto;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .icones{
@@ -182,8 +183,8 @@ header{
 
 .titre3{
     color: rgb(250, 229, 201);
-    font-size: 0.8em;
-    margin: 10px 0 10px;
+    font-size: 1.1em;
+    padding: 2em;
     text-align: center;
 }
 
@@ -196,13 +197,14 @@ header{
     background-color: lightblue;
     background-color: rgb(250, 229, 201);
     width: 90%;
-    margin: auto;
+    margin: 0 auto 1em auto;
+    aspect-ratio: 1/1;
 
 }
 .diagnostic{
-    padding-top: 20px;
+    padding-top: 3em;
     color: rgb(78, 22, 78);
-    /*padding: 20px 0 30px 0;*/
+    /*margin-bottom: 20px;*/
 }
 
 .para-diagnostic{
@@ -211,17 +213,25 @@ header{
     width: 90%;
     margin: auto;
     color: rgb(78, 22, 78);
+    font-size: 1em;
 }
 
 .button-services{
-    margin: 20px;
-    padding: 10px;
+    margin: 40px;
+    padding: 10px 20px;
     border-radius: none;
     color: white;
     font-size: 0.6em;
     background-color: rgb(78, 22, 78);
 }
 
+/* section 3 titre 3*/
+
+.biens{
+    background-color: lightblue;
+    display: flex;
+    margin: 50px;
+}
 
 
 
