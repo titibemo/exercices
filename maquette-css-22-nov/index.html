@@ -17,7 +17,8 @@
                 <div class="social-media">
                     <div class="google"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></div>
                     <div class="facebook"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></div>
-                    <div class="twitter"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></div>
+                    <div class="twitter"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,22 +48,21 @@
     </header>
 
     <nav class="nav">
-        <div class="nav1">
-        <li>QUI SOMMES-NOUS ?</li>
-        <li>NOS SERVICES</li>
-        <li>RECHERCHER UN BIEN</li>
-        </div>
-        <div class="nav2">
-        <li>NOS DERNIERES OFFRES</li>
-        <li>NOUS CONTACTER</li>
-        </div>
+
+        <li class="nav-link">QUI SOMMES-NOUS ?</li>
+        <li class="nav-link">NOS SERVICES</li>
+        <li class="nav-link">RECHERCHER UN BIEN</li>
+        <li class="nav-link">NOS DERNIERES OFFRES</li>
+        <li class="nav-link">NOUS CONTACTER</li>
+
     </nav>
 
     <section class="qui">
 
         <h2 class="titre2">QUI SOMMES-NOUS?</h2>
 
-        <p class="texte">Professionnels de l'immobilier depuis plus de 15 ans, nous sommes un intermédiaire entre vendeurs et acquéreurs. Notre volonté est de mener à bien toute transaction dans le respect de chacun, on offrant un suivi sérieux dans l"int"rêt des eux parties <strong> à un coût très réduit de 1% HT du prix de vente</strong></p>
+        <p class="texte">Professionnels de l'immobilier depuis plus de 15 ans, nous sommes un intermédiaire entre vendeurs et acquéreurs.<br>
+        Notre volonté est de mener à bien toute transaction dans le respect de chacun, on offrant un suivi sérieux dans l"int"rêt des eux parties <strong> à un coût très réduit de 1% HT du prix de vente</strong></p>
 
         <div class="icones">
             <div>
@@ -91,6 +91,8 @@
     <section class="services">
 
         <h2 class="titre3">NOS SERVICES EN LIGNE</h2>
+
+        <div class="services-tablette">
 
         <div class="service1">
             <div class="diagnostic">
@@ -143,7 +145,8 @@
                 <button class="button-services">EN SAVOIR +</button>
             </div>
         </div>
-        <p></p>
+        
+        </div>
 
     </section>
 
@@ -153,7 +156,7 @@
         
         <div class="biens">
             <div class="bien">
-                <p for="bien">TYPE DE BIEN</p>
+                <label for="bien">TYPE DE BIEN</label>
                 <select name="bien" id="bient">
                 <option value="dog">Tous type</option>
                 <option value="cat">Cat</option>
@@ -161,18 +164,20 @@
             </div>
             <div class="bien">
                 <label for="localisation">LOCALISATION</label>
-                <input class="inputs" type="text" name="localisation">
+                <input  type="text" name="localisation">
             </div>
-
+    
+            <div class="div-budget">
+                <label class="budget" for="budget">BUDGET</label>
+                <div>
+                <span class="budget-span">DE</span><input placeholder="€" class="inputs" type="text" name="budget">
+                <span class="budget-span">A</span><input placeholder="€" class="inputs" type="text" name="budget">
+                </div>
+            </div>    
+    
         </div>
-
         
-        <div>
-            <label class="budget" for="budget">BUDGET</label>
-            <span class="budget-span">DE</span><input placeholder="€" class="inputs" type="text" name="budget">
-            <span class="budget-span">A</span><input placeholder="€" class="inputs" type="text" name="budget">
-        </div>    
-
+      
         <div class="div-button-recherche">
         <button class="button-recherche">LANCER LA RECHERCHE</button>
         </div>
