@@ -47,7 +47,7 @@
     </header>
 
     <nav class="nav">
-        <div class="nav1"
+        <div class="nav1">
         <li>QUI SOMMES-NOUS ?</li>
         <li>NOS SERVICES</li>
         <li>RECHERCHER UN BIEN</li>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="service1">
-            <div class="diagnostic">
+            <div class="diagnostic1">
                 <img src="./images/header/logo.png" alt="" width="50px">
                 <p >DEMANDE DE FINANCEMENT</p>
             </div>
@@ -143,29 +143,122 @@
                 <button class="button-services">EN SAVOIR +</button>
             </div>
         </div>
+        <p></p>
 
     </section>
 
     <section class="recherche">
 
-        <h1 class="titre3">QUE RECHERCHEZ-VOUS ?</h1>
+        <h1 class="titre4">QUE RECHERCHEZ-VOUS ?</h1>
         
         <div class="biens">
-            <div>
-                <label for="bien">TYPE DE BIEN</label>
+            <div class="bien">
+                <p for="bien">TYPE DE BIEN</p>
                 <select name="bien" id="bient">
-                <option value="dog">Dog</option>
+                <option value="dog">Tous type</option>
                 <option value="cat">Cat</option>
+                </select>
+            </div>
+            <div class="bien">
+                <label for="localisation">LOCALISATION</label>
+                <input class="inputs" type="text" name="localisation">
             </div>
 
-            <div>
-                <input type="text" name="localisation">
-                <label for="localisation">LOCALISATION</label>
+        </div>
+
+        
+        <div>
+            <label class="budget" for="budget">BUDGET</label>
+            <span class="budget-span">DE</span><input placeholder="€" class="inputs" type="text" name="budget">
+            <span class="budget-span">A</span><input placeholder="€" class="inputs" type="text" name="budget">
+        </div>    
+
+        <div class="div-button-recherche">
+        <button class="button-recherche">LANCER LA RECHERCHE</button>
+        </div>
+    </section>    
+
+    <section class="mis-en-ligne">
+
+        <h1 class="titre4">DERNIERS BIENS MIS EN LIGNE</h1>
+
+        <nav class="choix-nav">
+            <a href="#">APPARTEMENTS</a>
+            <span> - </span>
+            <a href="#">MAISONS</a>
+            <span> - </span>
+            <a href="#">TERRAINS</a>
+        </nav>
+
+        <div class="maisons">
+            <img class="maison" src="./images/immobilier/houseLuxe.jpg" alt="Maison luxueuse à Nolwenn">
+            <img class="maison" src="./images/immobilier/houseHobbit.jpg" alt="Maison à Frodon Saquet">
+            <img class="maison" src="./images/immobilier/houseDark.jpg" alt="Maison à Dracula">
+        </div>
+
+        <div class="div-button-budget">
+            <button class="button-budget">VOIR PLUS DE BIEN</button>
+        </div>
+
+    </section>    
+
+    <section class="contactez-nous">
+
+        <h1 class="titre5">CONTACTEZ-NOUS</h1>
+
+        <div class="civilite">
+            <div >
+                <label for="civil">CIVILITE*</label>
+                <select name="civil">
+                    <option value="M.">M.</option>
+                    <option value="MMe">Mme</option>
+                </select>
+            </div>
+            <div >
+                <label for="nom">NOM</label>
+                <input class="input-civilite"  type="text" name="nom">
+            </div>
+            <div >
+                <label for="prenom">PRENOM</label>
+                <input class="input-civilite" type="text" name="prenom">
             </div>
         </div>
 
+        <div class="biens">
+            <div class="bien">
+                <label for="email">ADRESSE MAIL*</label>
+                <input class="inputs" type="email" name="email" required>
+            </div>
+            <div class="bien">
+                <label for="telephone">TELEPHONE*</label>
+                <input class="inputs" type="text" name="telephone">
+            </div>
+        </div>
+        <div>
+            <label class="contact" for="message">MESSAGE</label>
+            <textarea class="message" name="message" id="message" cols="30" rows="5"></textarea>
+            <span class="contact">Champs Obligatoires*</span>
+        </div>
+
+        <div class="div-button-contact">
+            <button class="button-contact">ENVOYER</button>
+        </div>
 
     </section>
+
+    <footer>
+        <div class="div-footer">
+            <a class="footer-link" href="">INFORMATION LEGALES</a>
+            <a class="footer-link" href="">CONTACT</a>
+            <a class="footer-link" href="">PLAN DU SITE</a>
+            <a class="footer-link" href="">FOIRE AUX QUESTIONS</a>
+            <a class="footer-link" href="">MENTIONS LEGALES</a>
+        </div>
+    </footer>
+       
+           
+         
+        
 
   
 

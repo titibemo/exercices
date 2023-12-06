@@ -190,6 +190,7 @@ header{
 
 .services{
     background: center / cover url(./images/header/headerbg.jpg);
+    padding: 10px;
 }
 
 .service1{
@@ -197,15 +198,15 @@ header{
     background-color: lightblue;
     background-color: rgb(250, 229, 201);
     width: 90%;
-    margin: 0 auto 1em auto;
-    aspect-ratio: 1/1;
+    margin: 0 auto 20px auto;
 
 }
 .diagnostic{
-    padding-top: 3em;
+    padding-top: 1em;
     color: rgb(78, 22, 78);
     /*margin-bottom: 20px;*/
 }
+
 
 .para-diagnostic{
     padding: 40px 0 20px 0;
@@ -217,26 +218,180 @@ header{
 }
 
 .button-services{
-    margin: 40px;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: none;
+    background-color: rgb(78, 22, 78);
     color: white;
     font-size: 0.6em;
-    background-color: rgb(78, 22, 78);
+    margin-bottom: 20px;
 }
 
-/* section 3 titre 3*/
+.div-button-recherche{
+    display: flex;
+    justify-content: center;
+}
+.button-recherche{
+    
+    margin: 40px auto 20px auto;
+    padding: 10px 10px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(150, 206, 19);
+}
+
+/* section 3 titre 3 biens*/
+.recherche{
+    background-color: lightgray;
+}
+.titre4{
+    color: rgb(78, 22, 78);
+    font-size: 1.5em;
+    padding: 0.8em;
+    text-align: center;
+}
 
 .biens{
-    background-color: lightblue;
+    color: rgb(78, 22, 78);
     display: flex;
-    margin: 50px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bien{
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    margin-top: 5px;
+    width: 40%;
+}
+.budget{
+    display: block;
+    margin-left: 10px;
+}
+.budget-span{
+    margin: 0px 5px;
+}
+
+.div-button-budget{
+    display: flex;
+    justify-content: center;
+}
+.button-budget{
+   
+    margin: 40px auto 20px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(150, 206, 19);
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 
+/* section mis en ligne */
+
+.choix-nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+
+.choix-nav a{
+    color: rgb(136, 27, 136);
+    text-decoration: none;
+}
+
+.maisons{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+
+}
+.maison{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100;
+    margin: 10px auto;
+    
+    
 
 
+    /*
+    display: block;
+    transform: scale(1.5);
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 
+    */
+}
 
+/* section contactez nous */
 
+.contactez-nous{
+    background-color: rgba(211, 211, 211, 0.541);
+}
+.titre5{
+    color: rgb(78, 22, 78);
+    font-size: 1.5em;
+    padding: 2em;
+    text-align: center;
+}
+.civilite{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 20% 35% 35%;
+    margin-left: 10px;
+    color: rgb(78, 22, 78);
+}
+.input-civilite {
+    width: 100%;
+}
+.contact{
+    color: rgb(78, 22, 78);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.message{
+    color: rgb(78, 22, 78);
+    display: block;
+    margin: 0 auto 0 10px;
+    width: 90%;
+}
+
+.div-button-contact{
+    display: flex;
+    justify-content: center;
+}
+.button-contact{
+    margin: 10px auto 20px auto;
+    padding: 10px 15px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(150, 206, 19);
+}
+
+/*  FOOTER  */
+
+footer{
+    background-color: rgb(78, 22, 78);
+}
+.div-footer{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.footer-link{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    color: aliceblue;
+}
 
