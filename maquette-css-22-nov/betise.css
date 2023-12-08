@@ -16,14 +16,11 @@ header{
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 .logo-desktop{
     display: none;
 }
 
 
-=======
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
 .test{
     position: relative;
     height: 70px;
@@ -35,7 +32,6 @@ header{
     width: 75px;
 }
 
-<<<<<<< HEAD
 .logo{
     position: absolute;
     left: 75px;
@@ -142,7 +138,6 @@ header{
     font-size: 0.6em;
 }
 
-=======
 .connexion{
     position: absolute;
     right: 0;
@@ -241,7 +236,6 @@ header{
     font-size: 0.6em;
 }
 
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
 .nav{
     display: flex;
     justify-content: center;
@@ -376,11 +370,8 @@ header{
     color: rgb(78, 22, 78);
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     justify-content: space-around;
-=======
     justify-content: space-between;
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
 
 }
 .bien{
@@ -422,17 +413,13 @@ header{
     text-align: center;
     width: 90%;
     margin: auto;
-<<<<<<< HEAD
     display: flex;
     flex-direction: column-reverse;
 
-=======
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
     
 
 }
 .maison{
-<<<<<<< HEAD
     display: flex;
     width: 100%;
     margin: 10px auto;
@@ -440,7 +427,6 @@ header{
 
 .maison-tablette, .maison-div{
     display: none;
-=======
     aspect-ratio: 1/1;
     width: 100%;
     height: 100;
@@ -455,7 +441,6 @@ header{
     object-fit: contain;
 
     */
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
 }
 
 /* section contactez nous */
@@ -470,7 +455,6 @@ header{
     text-align: center;
 }
 .civilite{
-<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -491,7 +475,6 @@ header{
     color: rgb(78, 22, 78);
     display: inline-block;
     margin: 0 0 5px 5px;
-=======
     display: grid;
     justify-content: space-around;
     grid-template-columns: 20% 35% 35%;
@@ -505,7 +488,6 @@ header{
     color: rgb(78, 22, 78);
     display: inline-block;
     margin-bottom: 5px;
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
 }
 .message{
     color: rgb(78, 22, 78);
@@ -611,7 +593,6 @@ flex-wrap: wrap;
     .service1{
         width: 95%;
     }  
-<<<<<<< HEAD
     /* ---- biens mis en lignes ----*/
     .maisons{
         display: grid;
@@ -766,7 +747,6 @@ flex-wrap: wrap;
 
 
 
-=======
     /* ---- Que rechercher vous ----*/
 /*
     .biens {
@@ -791,7 +771,7 @@ flex-wrap: wrap;
 
 
     
-}
+
 
 @media screen and (min-width = 700px) {
     .biens {
@@ -805,4 +785,4 @@ flex-wrap: wrap;
         justify-content: space-between;*/
       }
 }
->>>>>>> a12fd4bcdce1d7d1eb181dc11705230cd9685b9f
+
