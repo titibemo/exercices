@@ -32,11 +32,7 @@ header{
     width: 75px;
 }
 
-.logo{
-    position: absolute;
-    left: 75px;
-    width: 75px;
-}
+
 
 .connexion {
     position: absolute;
@@ -146,11 +142,16 @@ header{
     font-size: 0.5em;
     background-color: rgb(78, 22, 78);
     color: white;
-    padding: 15px 5px 15px 5px;  
+    /*padding: 15px 5px 15px 5px;  */
 }
 .nav-link{
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
     width: 30%;
+}
+.nav-link:hover{
+    background-color: rgb(141, 55, 141);
 }
 
 .qui{
@@ -205,9 +206,14 @@ header{
     text-align: center;
 }
 
+
 .services{
     background: center / cover url(./images/header/headerbg.jpg);
     padding: 10px;
+}
+.service-tablettes{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .service1{
@@ -216,9 +222,17 @@ header{
     background-color: rgb(250, 229, 201);
     width: 90%;
     margin: 0 auto 20px auto;
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    aspect-ratio: 1/1;
 
 }
 .diagnostic{
+    padding-top: 1em;
+    color: rgb(78, 22, 78);
+    /*margin-bottom: 20px;*/
+}
+.diagnostic1{
     padding-top: 1em;
     color: rgb(78, 22, 78);
     /*margin-bottom: 20px;*/
@@ -441,12 +455,10 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        padding: 15px 5px 15px 5px;
+        /*padding: 10px 5px 10px 5px;*/
         text-align: center;
     }
-      .nav1, .nav2{
-        width: 100%;
-    }
+
       /*qui sommes nous ?*/
 
       .titre2{
@@ -466,6 +478,8 @@ flex-wrap: wrap;
     }
     .service1{
         width: 95%;
+        aspect-ratio: auto
+        ;
     }  
     /* ---- biens mis en lignes ----*/
     .maisons{
@@ -546,6 +560,9 @@ flex-wrap: wrap;
     .google{
         background-color: orange;
     }
+    .header{
+        padding-bottom: 20px;
+    }
     .logo-desktop{
         display: block;
         position: absolute;
@@ -578,28 +595,100 @@ flex-wrap: wrap;
         width: 80px;;
         border-radius: none;
     }
+    .logo{
+        position: absolute;
+        left: 10%;
+        left: 75px;
+        width: 75px;
+    }
+    .whitepara, .greenpara{
+        left: 100px;
+    }
+    .violetpara, .grid, .small-para{
+        margin-left: 10%;
+    }
+    .violetpara{
+        font-size: 1.5em;
+    }
 
+    .nav{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: -30px auto 0 auto;
+        padding: 0;
+        height: 40px;
 
+    }
+    .button{
+       margin-bottom: 40px;
+    }
 
+    /* qui sommes nous */
+    .qui{
+        margin-top: -30px;
+    }
+    .titre2{
+        padding: 40px 0 0 0;
+    }
+    .texte, .icones {
+        width: 80%;
+        margin: auto;
+    }
+    .button-savoir{
+        margin-bottom: 30px;
+    }
 
+    /* Nos services */
 
+    .services{
+        padding: 0px;
+        background: rgb(250, 229, 201);
+    }
 
+    .titre3{
+        position: relative;
+        padding: 0;
+        top: 40px;
+    }
+    
+
+    .services-tablette{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        margin: auto;
+        background: center / cover url(./images/header/headerbg.jpg);
+        padding: 50px 20px 20px 20px;
+    }
+    .para-diagnostic{
+        font-size: 0.8em;
+        padding: 20px 0 30px 0;
+    }
+
+    /* Contacter nous */
+
+   .civilite, .div-message{
+    width: 80%;
+    margin: auto;
+   }
+   
+   footer{
+    background-color: rgb(250, 229, 201);
+    padding-bottom: 20px;
+   }
+   .div-footer{
+    background-color: rgb(78, 22, 78);
+    margin: auto;
+    width: 80%;
+    flex-wrap: nowrap;
+    font-size: 0.8em;
+   }
+   
 
        
 }
-    
-    
-
-
-  
-
-
-
-
-
-
-
-
     
 
 
@@ -622,203 +711,3 @@ flex-wrap: wrap;
 
 /* section mis en ligne */
 
-.choix-nav{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-   
-}
-
-.choix-nav a{
-    color: rgb(136, 27, 136);
-    text-decoration: none;
-}
-
-.maisons{
-    text-align: center;
-    width: 90%;
-    margin: auto;
-    
-
-}
-.maison{
-    aspect-ratio: 1/1;
-    width: 100%;
-    height: 100;
-    margin: 10px auto;
-    
-    /*
-    display: block;
-    transform: scale(1.5);
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-
-    */
-}
-
-/* section contactez nous */
-
-.contactez-nous{
-    background-color: rgba(211, 211, 211, 0.541);
-}
-.titre5{
-    color: rgb(78, 22, 78);
-    font-size: 1.5em;
-    padding: 2em;
-    text-align: center;
-}
-.civilite{
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 20% 35% 35%;
-    margin-left: 10px;
-    color: rgb(78, 22, 78);
-}
-.input-civilite {
-    width: 100%;
-}
-.contact{
-    color: rgb(78, 22, 78);
-    display: inline-block;
-    margin-bottom: 5px;
-}
-.message{
-    color: rgb(78, 22, 78);
-    display: block;
-    margin: 0 auto 0 10px;
-    width: 90%;
-}
-
-.div-button-contact{
-    display: flex;
-    justify-content: center;
-}
-.button-contact{
-    margin: 10px auto 20px auto;
-    padding: 10px 15px;
-    color: white;
-    font-size: 0.8em;
-    font-weight: bold;
-    background-color: rgb(150, 206, 19);
-}
-
-/*  FOOTER  */
-
-footer{
-    background-color: rgb(78, 22, 78);
-}
-.div-footer{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-}
-
-.footer-link{
-    text-decoration: none;
-    text-align: center;
-    margin: 10px 20px 10px 20px;
-    color: aliceblue;
-}
-
-@media screen and (min-width: 500px) {
-    .google{
-        background-color: red;
-    }
-
-    /*header*/
-
-    header{
-        background: center / 100% url(./images/header/headerbg.jpg);
-        font-weight: bold;
-    }
-    .logo{
-        position: absolute;
-        left: 0;
-        width: 75px;
-    }
-    .whitepara{
-        position: absolute;
-        top: 10px;
-        left: 5%;
-    }
-    .violetpara{
-        color: rgb(170, 73, 173);
-        margin-left: 10px;
-        margin-top: 40px;
-        font-size: 1.3em;
-    }
-    .small-para {
-        text-align: start;
-        margin-left: 10px;
-    }
-    .div-button {
-        text-align: start;
-        padding: 10px 0 40px 0;
-        margin-left: 20%;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        padding: 15px 5px 15px 5px;
-        text-align: center;
-    }
-      .nav1, .nav2{
-        width: 100%;
-    }
-      /*qui sommes nous ?*/
-
-      .titre2{
-        padding: 20px 0;
-    }
-      .icones{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-    }
-      .para-icone{
-        width: 70%;
-    }
-    .services-tablette{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .service1{
-        width: 95%;
-    }  
-    /* ---- Que rechercher vous ----*/
-/*
-    .biens {
-        display: flex;
-       flex-wrap: nowrap;
-       justify-content: center;
-
-      }
-    .bien{
-        display: inline;
-    }
-
-      .inputs{
-
-      }
-*/
-
-
-
-
-
-
-
-    
-}
-
-@media screen and (min-width: 700px) {
-    .biens {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-
-      }
-}
