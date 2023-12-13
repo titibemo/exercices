@@ -1,0 +1,824 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'aneliza', 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: "aneliza";
+    src: url(./fonts/Aneliza-Bold/Aneliza-Regular.ttf);
+}
+
+
+header{
+    background: center / 200% url(./images/header/headerbg.jpg);
+    font-weight: bold;
+}
+
+.logo-desktop{
+    display: none;
+}
+
+
+.test{
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    position: absolute;
+    left: 75px;
+    width: 75px;
+}
+
+.logo{
+    position: absolute;
+    left: 75px;
+    width: 75px;
+}
+
+.connexion {
+    position: absolute;
+    right: 0;
+    font-size: 0.8em;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+.client{
+    color: white;
+    background-color: rgb(50, 1, 99);
+    padding: 3px 10px 3px 10px;
+    font-size: 0.6em;
+    font-weight: 200;
+}
+.social-media{
+    display: flex;
+    justify-content:space-around;
+    height: 40px;
+}
+.google, .facebook, .twitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.google{
+    background-color: rgb(169, 224, 79);
+}
+.facebook{
+    background-color:rgb(152, 211, 57);
+}
+.twitter{
+    background-color: rgb(128, 180, 44);
+}
+
+.whitepara{
+    position: relative;
+    color: white;
+    margin-left: 40px;
+    max-width:fit-content;
+}
+.greenpara{
+    color: rgb(169, 224, 79);
+    font-size: 1em;
+}
+.violetpara{
+    color: rgb(170, 73, 173);
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.grid{
+    color: white;
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+}
+
+.un{
+    font-size: 3em;
+}
+.pourcentage{
+    font-size: 2em;
+}
+.prix{
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-weight:900;
+}
+.prix .seulement{
+    line-height: 1.2;
+    font-size: 1.8em;
+    margin-left: -10px;
+    font-weight:bolder;
+}
+
+.small-para{
+    font-size: 0.3em;
+    color: white;
+    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.div-button{
+    text-align: center;
+    padding: 10px 0 40px 0;
+}
+.button{
+    padding: 10px;
+    border-radius: none;
+    background-color: rgb(150, 206, 19);
+    color: white;
+    font-size: 0.6em;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 0.5em;
+    background-color: rgb(78, 22, 78);
+    color: white;
+    padding: 15px 5px 15px 5px;  
+}
+.nav-link{
+    padding: 10px;
+    width: 30%;
+}
+
+.qui{
+    background-color: rgb(250, 229, 201);
+}
+
+.titre2{
+    color: rgb(78, 22, 78);
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.texte{
+    color: rgb(78, 22, 78);
+    font-size: 0.8em;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.icones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+}
+
+.para-icone{
+    width: 50%;
+    margin: auto;
+    color: rgb(78, 22, 78);
+    font-size: 0.8em;
+}
+
+.div-savoir{
+    text-align: center;
+}
+.button-savoir{
+    padding: 10px;
+    border-radius: none;
+    background-color: rgb(150, 206, 19);
+    color: white;
+    font-size: 0.6em;
+    margin-bottom: 50px;
+}
+
+.titre3{
+    color: rgb(250, 229, 201);
+    font-size: 1.1em;
+    padding: 2em;
+    text-align: center;
+}
+
+.services{
+    background: center / cover url(./images/header/headerbg.jpg);
+    padding: 10px;
+}
+
+.service1{
+    text-align: center;
+    background-color: lightblue;
+    background-color: rgb(250, 229, 201);
+    width: 90%;
+    margin: 0 auto 20px auto;
+
+}
+.diagnostic{
+    padding-top: 1em;
+    color: rgb(78, 22, 78);
+    /*margin-bottom: 20px;*/
+}
+
+
+.para-diagnostic{
+    padding: 40px 0 20px 0;
+    font-size: 0.8em;
+    width: 90%;
+    margin: auto;
+    color: rgb(78, 22, 78);
+    font-size: 1em;
+}
+
+.button-services{
+    padding: 10px;
+    border-radius: none;
+    background-color: rgb(78, 22, 78);
+    color: white;
+    font-size: 0.6em;
+    margin-bottom: 20px;
+}
+
+.div-button-recherche{
+    display: flex;
+    justify-content: center;
+}
+.button-recherche{
+    
+    margin: 20px auto 20px auto;
+    padding: 10px 10px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(150, 206, 19);
+}
+
+/* section 3 titre 3 biens*/
+.recherche{
+    background-color: lightgray;
+}
+.titre4{
+    color: rgb(78, 22, 78);
+    font-size: 1.5em;
+    padding: 0.8em;
+    text-align: center;
+}
+
+.biens{
+    color: rgb(78, 22, 78);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.bien{
+    color: rgb(78, 22, 78);
+    display: flex;
+    flex-direction: column;
+}
+
+.div-button-budget{
+    display: flex;
+    justify-content: center;
+}
+.button-budget{
+   
+    margin: 40px auto 20px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(150, 206, 19);
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+/* section mis en ligne */
+
+.choix-nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+
+.choix-nav a{
+    color: rgb(136, 27, 136);
+    text-decoration: none;
+}
+
+.maisons{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+    
+
+}
+.maison{
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.maison-tablette, .maison-div{
+    display: none;
+}
+
+/* section contactez nous */
+
+.contactez-nous{
+    background-color: rgba(211, 211, 211, 0.541);
+}
+.titre5{
+    color: rgb(78, 22, 78);
+    font-size: 1.5em;
+    padding: 2em;
+    text-align: center;
+}
+.civilite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div-civilite {
+    color: rgb(78, 22, 78);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 10px auto;    
+}
+.input-civilite{
+    margin: auto;
+    width: 90%;
+   
+}
+
+.contact{
+    color: rgb(78, 22, 78);
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
+.message{
+    color: rgb(78, 22, 78);
+    display: block;
+    margin: 0 auto 0 10px;
+    width: 90%;
+}
+
+.div-button-contact{
+    display: flex;
+    justify-content: center;
+}
+.button-contact{
+    margin: 10px auto 20px auto;
+    padding: 10px 15px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(150, 206, 19);
+}
+
+/*  FOOTER  */
+
+footer{
+    background-color: rgb(78, 22, 78);
+}
+.div-footer{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.footer-link{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 500px) {
+    .google{
+        background-color: red;
+    }
+
+    /*header*/
+
+    header{
+        background: center / 100% url(./images/header/headerbg.jpg);
+        font-weight: bold;
+    }
+    .logo{
+        position: absolute;
+        left: 0;
+        width: 75px;
+    }
+    .whitepara{
+        position: absolute;
+        top: 10px;
+        left: 5%;
+    }
+    .violetpara{
+        color: rgb(170, 73, 173);
+        margin-left: 10px;
+        margin-top: 40px;
+        font-size: 1.3em;
+    }
+    .small-para {
+        text-align: start;
+        margin-left: 10px;
+    }
+    .div-button {
+        text-align: start;
+        padding: 10px 0 40px 0;
+        margin-left: 20%;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 15px 5px 15px 5px;
+        text-align: center;
+    }
+      .nav1, .nav2{
+        width: 100%;
+    }
+      /*qui sommes nous ?*/
+
+      .titre2{
+        padding: 20px 0;
+    }
+      .icones{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+      .para-icone{
+        width: 70%;
+    }
+    .services-tablette{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service1{
+        width: 95%;
+    }  
+    /* ---- biens mis en lignes ----*/
+    .maisons{
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+        
+       
+    }
+    .maison{
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .maison-tablette{
+        display: block;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
+        margin: 10px auto;
+        
+    }
+    .maison-div{
+        display: block;
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+        margin: 10px auto;
+        aspect-ratio: 1/1;
+        background: rgba(82, 31, 71, 0.597)  url(./images/immobilier/houseTardis.jpg);
+        background-blend-mode:darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        color: white;
+        font-weight: bold;
+  }
+    .maison-para{
+        text-align: center;
+        width: 50%;
+        
+        margin:20% auto 10px auto;
+    }
+    .maison-prix{
+        margin-bottom: 10px;
+    }
+    .maison-nom{
+        font-weight:100;
+        font-size: 0.8em;
+    }
+    .button-maison{
+        padding: 10px;
+        border-radius: none;
+        background-color: rgb(150, 206, 19);
+        color: white;
+        font-size: 0.6em;
+    }
+    .div-footer{
+        justify-content: space-evenly;
+    }
+   .footer-link{
+        width: 25%;
+        text-decoration: none;
+        text-align: center;
+        margin: 10px 20px 10px 20px;
+        color: aliceblue;
+    }
+
+
+
+
+
+
+
+
+  }
+
+  @media screen and (min-width: 900px) {
+    .google{
+        background-color: orange;
+    }
+    .logo-desktop{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 500px;
+
+    }
+    .connexion {
+        position: absolute;
+        right: 5%;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: row;
+        border: none;
+
+    }
+    .client{
+        height: 20px;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        margin: 10px 5px 0 0;
+        align-items: center;
+      }
+      .social-media{
+        display: flex;
+        justify-content:space-around;
+        height: 40px;
+        width: 80px;;
+        border-radius: none;
+    }
+
+
+
+
+
+
+
+       
+}
+    
+    
+
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+@media screen and (min-width: 700px) {
+    .biens {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+      }
+}
+@media screen and (min-width: 600px) {
+    .civilite{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+}
+
+
+/* section mis en ligne */
+
+.choix-nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+
+.choix-nav a{
+    color: rgb(136, 27, 136);
+    text-decoration: none;
+}
+
+.maisons{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+
+}
+.maison{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100;
+    margin: 10px auto;
+    
+    /*
+    display: block;
+    transform: scale(1.5);
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+
+    */
+}
+
+/* section contactez nous */
+
+.contactez-nous{
+    background-color: rgba(211, 211, 211, 0.541);
+}
+.titre5{
+    color: rgb(78, 22, 78);
+    font-size: 1.5em;
+    padding: 2em;
+    text-align: center;
+}
+.civilite{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 20% 35% 35%;
+    margin-left: 10px;
+    color: rgb(78, 22, 78);
+}
+.input-civilite {
+    width: 100%;
+}
+.contact{
+    color: rgb(78, 22, 78);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.message{
+    color: rgb(78, 22, 78);
+    display: block;
+    margin: 0 auto 0 10px;
+    width: 90%;
+}
+
+.div-button-contact{
+    display: flex;
+    justify-content: center;
+}
+.button-contact{
+    margin: 10px auto 20px auto;
+    padding: 10px 15px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(150, 206, 19);
+}
+
+/*  FOOTER  */
+
+footer{
+    background-color: rgb(78, 22, 78);
+}
+.div-footer{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.footer-link{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 500px) {
+    .google{
+        background-color: red;
+    }
+
+    /*header*/
+
+    header{
+        background: center / 100% url(./images/header/headerbg.jpg);
+        font-weight: bold;
+    }
+    .logo{
+        position: absolute;
+        left: 0;
+        width: 75px;
+    }
+    .whitepara{
+        position: absolute;
+        top: 10px;
+        left: 5%;
+    }
+    .violetpara{
+        color: rgb(170, 73, 173);
+        margin-left: 10px;
+        margin-top: 40px;
+        font-size: 1.3em;
+    }
+    .small-para {
+        text-align: start;
+        margin-left: 10px;
+    }
+    .div-button {
+        text-align: start;
+        padding: 10px 0 40px 0;
+        margin-left: 20%;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 15px 5px 15px 5px;
+        text-align: center;
+    }
+      .nav1, .nav2{
+        width: 100%;
+    }
+      /*qui sommes nous ?*/
+
+      .titre2{
+        padding: 20px 0;
+    }
+      .icones{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+      .para-icone{
+        width: 70%;
+    }
+    .services-tablette{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service1{
+        width: 95%;
+    }  
+    /* ---- Que rechercher vous ----*/
+/*
+    .biens {
+        display: flex;
+       flex-wrap: nowrap;
+       justify-content: center;
+
+      }
+    .bien{
+        display: inline;
+    }
+
+      .inputs{
+
+      }
+*/
+
+
+
+
+
+
+
+    
+}
+
+@media screen and (min-width: 700px) {
+    .biens {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+      }
+}
