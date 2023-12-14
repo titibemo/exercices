@@ -17,7 +17,14 @@
         echo "<a href=\"./connexion.php\">Se connecter</a>";
 
     }
+
+    if(isset($_SESSION["username"])){
+        
+        echo '<p class="msg"> Bonjour ' . $_SESSION['username'] . '<br>'. 'ce nest pas vous ?' . '<br>' . '<a href=\"./connexion.php\">Se déconnecter</a>' . ' </p>';
+    }
+    
     ?>
+    
    
 
     </header>

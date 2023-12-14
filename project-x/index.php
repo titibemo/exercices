@@ -9,11 +9,6 @@ require "./template/_header.php";
 
 <?php
 
-if(isset($_SESSION["username"])){
-
-    echo "Bonjour " . ($_SESSION["username"]) . " Ce n'est pas vous ?" . "<a href=\"./deconnexion.php\">se déconnecter</a>";
-
-}
 
 
 
