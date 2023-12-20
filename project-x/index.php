@@ -1,29 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<h1>J'ai réussi</h1>
+	
+</body>
+</html>
+
 <?php
 
-session_start();
-
-$title = "";
-require "./template/_header.php";
+//require __DIR__ ."/elements/footer.php";
 
 ?>
-
-<?php
-
-
-
-
-
-?>
-
-
-<div class="class1">blabla 1</div>
-<div class="class2">blabla 2</div>
-<div class="class3">blabla 3</div>
-<div class="class4">blabla 4</div>
-
-
-
-
-
-<a href="./test.php">page quelconque</a>
-<a href="./test.php">page déconnexion</a>
